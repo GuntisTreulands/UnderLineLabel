@@ -14,7 +14,7 @@
 		9DFA76F515CA92710079E5B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA76F415CA92710079E5B7 /* main.m */; };
 		9DFA76F915CA92710079E5B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA76F815CA92710079E5B7 /* AppDelegate.m */; };
 		9DFA76FC15CA92710079E5B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA76FB15CA92710079E5B7 /* ViewController.m */; };
-		9DFA770B15CA92A80079E5B7 /* UnderLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA770A15CA92A80079E5B7 /* UnderLineLabel.m */; };
+		9DFA770F15CA99D20079E5B7 /* UnderLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFA770E15CA99D20079E5B7 /* UnderLineLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		9DFA76F815CA92710079E5B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9DFA76FA15CA92710079E5B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9DFA76FB15CA92710079E5B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		9DFA770915CA92A80079E5B7 /* UnderLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderLineLabel.h; sourceTree = "<group>"; };
-		9DFA770A15CA92A80079E5B7 /* UnderLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderLineLabel.m; sourceTree = "<group>"; };
+		9DFA770D15CA99D20079E5B7 /* UnderLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnderLineLabel.h; sourceTree = "<group>"; };
+		9DFA770E15CA99D20079E5B7 /* UnderLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnderLineLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 		9DFA76EE15CA92710079E5B7 /* UnderLabelTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				9DFA770815CA92A80079E5B7 /* UnderLineLabel */,
+				9DFA770C15CA99D20079E5B7 /* UnderLineLabel */,
 				9DFA76F715CA92710079E5B7 /* AppDelegate.h */,
 				9DFA76F815CA92710079E5B7 /* AppDelegate.m */,
 				9DFA76FA15CA92710079E5B7 /* ViewController.h */,
@@ -99,13 +99,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9DFA770815CA92A80079E5B7 /* UnderLineLabel */ = {
+		9DFA770C15CA99D20079E5B7 /* UnderLineLabel */ = {
 			isa = PBXGroup;
 			children = (
-				9DFA770915CA92A80079E5B7 /* UnderLineLabel.h */,
-				9DFA770A15CA92A80079E5B7 /* UnderLineLabel.m */,
+				9DFA770D15CA99D20079E5B7 /* UnderLineLabel.h */,
+				9DFA770E15CA99D20079E5B7 /* UnderLineLabel.m */,
 			);
-			path = UnderLineLabel;
+			name = UnderLineLabel;
+			path = ../../UnderLineLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +173,7 @@
 				9DFA76F515CA92710079E5B7 /* main.m in Sources */,
 				9DFA76F915CA92710079E5B7 /* AppDelegate.m in Sources */,
 				9DFA76FC15CA92710079E5B7 /* ViewController.m in Sources */,
-				9DFA770B15CA92A80079E5B7 /* UnderLineLabel.m in Sources */,
+				9DFA770F15CA99D20079E5B7 /* UnderLineLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
