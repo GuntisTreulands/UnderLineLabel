@@ -2,7 +2,7 @@ UnderLineLabel
 ==============
 
 
-(https://github.com/GuntisTreulands/UnderLineLabel/blob/master/ImagePreview.png)
+![Image](https://github.com/GuntisTreulands/UnderLineLabel/blob/master/ImagePreview.png)
 
 UILabel subclass with possibility to draw line under text (with offset)
 
