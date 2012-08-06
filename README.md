@@ -45,7 +45,8 @@ For using in UITableViewCells (where it needs to be updated more often) - also c
 
 
 
-    <b>BSD license</b>
+BSD license
+===
 
 	Copyright (c) 2012 Guntis Treulands.
 	All rights reserved.
