@@ -22,7 +22,7 @@ To use:
 
     [mLabel setShouldStrikeOut:YES]; //will strike out text
     
-    [mLabel setUnderLineOffset:-1];//will set line Y offset
+    [mLabel setUnderLineOffset:-1];//will set (strike out or underline) line Y offset
     
     [mLabel setTextAlignment:UITextAlignmentCenter]; //supports all three text alignments
     
