@@ -125,6 +125,8 @@
                     mCurrentLine++;
                     
                     mBreakChar = mSpaceChar+1; //break char is last space char +1.
+                    
+                    i = mBreakChar; //go back to check again from last breakpoint.
                 }
             }
             if(i == [mTotalTextString length]-1)//last line - draw from last break to this char.
