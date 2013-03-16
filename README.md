@@ -37,7 +37,7 @@ To use:
  - If string is out of label boundaries - it will not work;
  - If a word is longer than label width - it will not work; 
 
-Currently - it calculates only using spaces between words. If it would extra check all symbols - it would loose it's speed.
+Currently - it calculates only using spaces and newline symbols between words. If it would extra check all symbols - it would loose it's speed.
 
 For using in UITableViewCells (where it needs to be updated more often) - also call:
     [mLabel setNeedsDisplay];
