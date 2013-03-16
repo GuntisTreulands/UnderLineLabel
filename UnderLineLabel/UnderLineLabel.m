@@ -9,17 +9,21 @@
 
 @implementation UnderLineLabel
 
-@synthesize shouldStrikeOut, shouldUnderline, underLineOffset;
+@synthesize shouldStrikeOut,
+            shouldUnderline,
+            underLineOffset;
 
-- (id) initWithFrame:(CGRect) frame
+- (id) initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
+    
     if (self)
     {
         shouldStrikeOut = FALSE;
 
         underLineOffset = 0;
     }
+    
     return self;
 }
 
@@ -65,7 +69,7 @@
 
         //topOffset, if label height is bigger than text height
         int topOffset = (self.frame.size.height - [mTotalTextString sizeWithFont:self.font
-                                                               constrainedToSize:self.frame.size].height) / 2;
+            constrainedToSize:self.frame.size].height) / 2;
 
         if (shouldStrikeOut)//offset to top by 1/3 of line height (but its not 100% perfect..)
         {
@@ -84,7 +88,7 @@
 
                 //calculate precise width
                 mPartOfTextStringWidth = [mPartOfTextString sizeWithFont:self.font
-                                                       constrainedToSize:CGSizeMake(self.frame.size.width, 9999)].width;
+                    constrainedToSize:CGSizeMake(self.frame.size.width, 9999)].width;
 
                 //--- set extra space from beginning
                 if (self.textAlignment == UITextAlignmentCenter)
@@ -97,9 +101,11 @@
                 }
                 //===
 
-                CGContextMoveToPoint(ctx, extraSpaceFromBeginning, lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
+                CGContextMoveToPoint(ctx, extraSpaceFromBeginning,
+                    lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
 
-                CGContextAddLineToPoint(ctx, extraSpaceFromBeginning + mPartOfTextStringWidth, lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
+                CGContextAddLineToPoint(ctx, extraSpaceFromBeginning + mPartOfTextStringWidth,
+                    lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
 
                 mCurrentLine++;
 
@@ -115,7 +121,7 @@
 
                 //calculate width (total width - so we know, it should break!
                 mPartOfTextStringWidth = [mPartOfTextString sizeWithFont:self.font
-                                                       constrainedToSize:CGSizeMake(9999, 9999)].width;
+                    constrainedToSize:CGSizeMake(9999, 9999)].width;
 
 
                 //this means that it will not break
@@ -138,7 +144,7 @@
 
                     //calculate precise width
                     mPartOfTextStringWidth = [mPartOfTextString sizeWithFont:self.font
-                                                           constrainedToSize:CGSizeMake(self.frame.size.width, 9999)].width;
+                        constrainedToSize:CGSizeMake(self.frame.size.width, 9999)].width;
 
                     //--- set extra space from beginning
                     if (self.textAlignment == UITextAlignmentCenter)
@@ -151,9 +157,11 @@
                     }
                     //===
 
-                    CGContextMoveToPoint(ctx, extraSpaceFromBeginning, lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
+                    CGContextMoveToPoint(ctx, extraSpaceFromBeginning,
+                        lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
 
-                    CGContextAddLineToPoint(ctx, extraSpaceFromBeginning + mPartOfTextStringWidth, lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
+                    CGContextAddLineToPoint(ctx, extraSpaceFromBeginning + mPartOfTextStringWidth,
+                        lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
 
                     mCurrentLine++;
 
@@ -170,7 +178,7 @@
 
                 //calculate precise width
                 mPartOfTextStringWidth = [mPartOfTextString sizeWithFont:self.font
-                                                       constrainedToSize:CGSizeMake(self.frame.size.width, 9999)].width;
+                    constrainedToSize:CGSizeMake(self.frame.size.width, 9999)].width;
 
 
                 //--- set extra space from beginning
@@ -184,9 +192,11 @@
                 }
                 //===
 
-                CGContextMoveToPoint(ctx, extraSpaceFromBeginning, lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
+                CGContextMoveToPoint(ctx, extraSpaceFromBeginning,
+                    lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
 
-                CGContextAddLineToPoint(ctx, extraSpaceFromBeginning + mPartOfTextStringWidth, lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
+                CGContextAddLineToPoint(ctx, extraSpaceFromBeginning + mPartOfTextStringWidth,
+                    lineHeight * mCurrentLine - 1 + underLineOffset + topOffset);
             }
         }
         //===
